@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if [ ! -z "$WWWUSER" ]; then
+    usermod -u $WWWUSER nobreack
+fi
+
+if [ ! -d /.composer ]; then
+    mkdir /.composer
+fi
+
+chmod -R ugo+rw /.composer
+
+if [ $# -gt 0 ]; then
+    exec gosu $WWWUSER "$@"
+else
+    echo -e "\n\n Nobreack application.\n"
+    echo -e "\nPHP      version: $(php -v | grep ^PHP | cut -d' ' -f2)"
+    echo -e "\nNode     version: $(node -v)"
+    echo -e "\nNPM      version: $(npm -v)"
+    echo -e "\nYARN     version: $(yarn -v)"
+    echo -e "\nCOMPOSE  version: $(composer --version | cut -d' ' -f3)\n"
+fi

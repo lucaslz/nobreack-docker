@@ -1,0 +1,59 @@
+######## [PHP Modules] Default ########
+#### Core
+#### ctype
+#### curl
+#### date
+#### dom
+#### fileinfo
+#### filter
+#### ftp
+#### hash
+#### iconv
+#### json
+#### libxml
+#### mbstring
+#### mysqlnd
+#### openssl
+#### pcre
+#### PDO
+#### pdo_sqlite
+#### Phar
+#### posix
+#### readline
+#### Reflection
+#### session
+#### SimpleXML
+#### sodium
+#### SPL
+#### sqlite3
+#### standard
+#### tokenizer
+#### xml
+#### xmlreader
+#### xmlwriter
+#### zlib
+
+######## Dependencies ########
+#### bzip2-dev: bz2
+#### enchant2-dev: enchant
+#### gd: libpng-dev
+#### gmp: gmp-dev
+#### imap: imap-dev
+#### intl: icu-dev
+#### ldap: openldap-dev
+#### pdo_dblib: freetds-dev
+#### pdo_pgsql: postgresql-dev
+#### pgsql: postgresql-dev
+#### pspell: aspell-dev
+#### snmp: net-snmp-dev
+#### soap: libxml2-dev
+#### tidy: tidyhtml-dev
+#### xsl: libxslt-dev
+#### zip: libzip-dev
+
+######## PHP MODULES not working yet ########
+#### oci8
+#### odbc
+#### pdo_firebird
+#### pdo_oci
+#### pdo_odbc

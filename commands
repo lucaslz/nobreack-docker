@@ -1,0 +1,9 @@
+docker build --build-arg WWWGROUP=$(id -g) -t php-cli:8.1-1.0.0 .
+
+docker run --rm -e WWWUSER=$UID -it php-cli:8.1-1.0.0 php -h
+
+# ------------------------------------------------------------------------------
+
+docker build --build-arg WWWGROUP=$(id -g) -t php-cli-alpine:8.1-1.0.0 .
+
+docker run --rm -e WWWUSER=$UID -it php-cli-alpine:8.1-1.0.0 php -h

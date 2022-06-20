@@ -1,0 +1,12 @@
+{
+    "name": "lucaslz/teste",
+    "description": "teste",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "teste"
+        }
+    ],
+    "require": {}
+}
